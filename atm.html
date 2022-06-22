@@ -8,7 +8,6 @@
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
-
 <body>
 
 <div class="mobile-container">
@@ -31,29 +30,59 @@
     </div>
 </div>
 
-<script src="NavigationController.js"></script>
+<div class="screen-meta login-screen-meta">
+    <div class="login-screen">
+        <h2 class="title">LOGIN</h2>
+        <form class="login-form">
+            <div class="input-group">
+                <label for="username">Username</label>
+                <input id="username" type="text">
+            </div>
+            <div class="input-group pin-input-group">
+                <label for="pin">PIN</label>
+                <input id="pin" type="number">
+            </div>
+        </form>
+        <div class="footer-arena">
+            <button class="login-btn">LOGIN</button>
+            <div>
+                <hr/>
+                <p>Don&apos;t have an account? <a href="#" class="sign-up-navigator">Sign Up</a></p>
+            </div>
+        </div>
+    </div>
+</div>
 
-<script src="screens/login_screen.js"></script>
-<script src="screens/register_screen.js"></script>
-<script src="screens/dashboard_screen.js"></script>
-<script src="screens/deposit_screen.js"></script>
-<script src="screens/withdraw_screen.js"></script>
-<script src="screens/check_balance_screen.js"></script>
+<div class="screen-meta register-screen-meta">
+    <div class="register-screen">
+        <h2 class="title">Register</h2>
+        <form class="login-form">
+            <div class="input-group">
+                <label for="full_name">Full name</label>
+                <input id="full_name" type="text">
+            </div>
+            <div class="input-group">
+                <label for="register_username">Username</label>
+                <input id="register_username" type="text">
+            </div>
+            <div class="input-group pin-input-group">
+                <label for="register_pin">PIN</label>
+                <input id="register_pin" type="number">
+            </div>
+        </form>
+        <div class="footer-arena">
+            <button class="login-btn">Register</button>
+            <div>
+                <hr/>
+                <p>Already have an account? <a href="#">LOGIN</a></p>
+            </div>
+        </div>
+    </div>
+</div>
 
-<script src="NavGraph.js"></script>
-
-<script>
-    const navController = new NavigationController(
-        document.querySelector('.mobile-screen'),
-        screens.login_screen
-    );
-
-    navController.renderTopEntryInStack();
-
-    document.querySelector('.fa-chevron-right').addEventListener('click', e => {
-        navController.popBackStack();
-    });
-</script>
+<script src="screens/login-screen.js"></script>
+<script src="screens/register-screen.js"></script>
+<script src="atm.js"></script>
 
 </body>
 </html>

@@ -113,4 +113,57 @@ body {
   border: 2px solid black;
 }
 
+.screen-meta {
+  display: none;
+}
+
+.login-screen {
+  height: 100%;
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  flex-direction: column;
+}
+.login-screen h2 {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.login-screen .login-form {
+  width: 100%;
+  flex: 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.login-screen .login-form .input-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+}
+.login-screen .login-form .input-group label {
+  padding-bottom: 4px;
+}
+.login-screen .login-form .pin-input-group {
+  padding-top: 8px;
+}
+.login-screen hr {
+  width: 100%;
+}
+.login-screen p {
+  margin: 0;
+}
+.login-screen .footer-arena {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 4;
+  width: 100%;
+}
+.login-screen .footer-arena .login-btn, .login-screen .footer-arena div {
+  margin: 0 24px;
+}
+
 /*# sourceMappingURL=atm.css.map */
