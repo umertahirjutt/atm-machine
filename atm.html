@@ -1,0 +1,59 @@
+<html>
+
+<head>
+    <title> ATM Machine Login</title>
+    <link rel="stylesheet" href="atm.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+
+<body>
+
+<div class="mobile-container">
+    <div class="mobile-header">
+        <div class="camera-container">
+            <div class="camera-dot">
+                <div class="camera-retina"></div>
+            </div>
+        </div>
+        <div class="mobile-speaker"></div>
+        <div class="sensor-light"></div>
+    </div>
+    <div class="mobile-screen">
+
+    </div>
+    <div class="mobile-footer">
+        <i class="fa-solid fa-bars"></i>
+        <div class="home-button"></div>
+        <i class="fa-solid fa-chevron-right"></i>
+    </div>
+</div>
+
+<script src="NavigationController.js"></script>
+
+<script src="screens/login_screen.js"></script>
+<script src="screens/register_screen.js"></script>
+<script src="screens/dashboard_screen.js"></script>
+<script src="screens/deposit_screen.js"></script>
+<script src="screens/withdraw_screen.js"></script>
+<script src="screens/check_balance_screen.js"></script>
+
+<script src="NavGraph.js"></script>
+
+<script>
+    const navController = new NavigationController(
+        document.querySelector('.mobile-screen'),
+        screens.login_screen
+    );
+
+    navController.renderTopEntryInStack();
+
+    document.querySelector('.fa-chevron-right').addEventListener('click', e => {
+        navController.popBackStack();
+    });
+</script>
+
+</body>
+</html>
