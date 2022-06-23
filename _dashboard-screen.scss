@@ -1,10 +1,9 @@
-.login-screen {
+.dashboard-screen {
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
+  justify-content: center;
   align-items: center;
   flex-direction: column;
-
 
   h2 {
     flex: 3;
@@ -17,9 +16,9 @@
 
   }
 
-  .login-form {
+  .dashboard-form {
     width: 100%;
-    flex: 7;
+    flex: 10;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -29,44 +28,21 @@
       display: flex;
       flex-direction: column;
       padding: 0 24px;
+      .button-group{
+        background-color: blue;
+        width: 100px;
+        height: 30px;
+        font-size: 1rem;
+        border-radius: 50px;
+        color: white;
+        margin-left: 87px;
+
+      }
 
       label {
         padding-bottom: 4px;
       }
-    }
 
-    .pin-input-group {
-      padding-top: 8px;
-    }
-  }
-
-  hr {
-    width: 100%;
-  }
-
-  p {
-    margin: 0;
-  }
-
-  .footer-arena {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    flex: 4;
-    width: 100%;
-
-    button{
-      background-color:blue;
-      color: white;
-
-      padding: 7px 10px;
-      border-radius: 40px;
-
-
-    }
-
-    .login-up-btn, div {
-      margin: 0 24px;
     }
   }
 }

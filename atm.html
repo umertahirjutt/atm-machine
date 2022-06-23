@@ -7,8 +7,14 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Fredoka+One&display=swap" rel="stylesheet">
+
 </head>
 <body>
+
+<div class="stack-container"></div>
 
 <div class="mobile-container">
     <div class="mobile-header">
@@ -32,7 +38,7 @@
 
 <div class="screen-meta login-screen-meta">
     <div class="login-screen">
-        <h2 class="title">LOGIN</h2>
+        <h2 class="title">ATM Machine</h2>
         <form class="login-form">
             <div class="input-group">
                 <label for="username">Username</label>
@@ -44,7 +50,7 @@
             </div>
         </form>
         <div class="footer-arena">
-            <button class="login-btn">LOGIN</button>
+            <button class="login-up-btn">LOGIN</button>
             <div>
                 <hr/>
                 <p>Don&apos;t have an account? <a href="#" class="sign-up-navigator">Sign Up</a></p>
@@ -56,7 +62,7 @@
 <div class="screen-meta register-screen-meta">
     <div class="register-screen">
         <h2 class="title">Register</h2>
-        <form class="login-form">
+        <form class="register-form">
             <div class="input-group">
                 <label for="full_name">Full name</label>
                 <input id="full_name" type="text">
@@ -74,15 +80,97 @@
             <button class="login-btn">Register</button>
             <div>
                 <hr/>
-                <p>Already have an account? <a href="#">LOGIN</a></p>
+                <p>Already have an account? <a href="#" class="login-up-navigator">LOGIN</a></p>
             </div>
         </div>
     </div>
 </div>
 
-<script src="screens/login-screen.js"></script>
-<script src="screens/register-screen.js"></script>
-<script src="atm.js"></script>
+<div class="screen-meta dashboard-screen-meta">
+    <div class="dashboard-screen">
+        <h2 class="title">Dashboard</h2>
+        <form class="dashboard-form">
+
+            <div class=" input-group d-input ">
+                <label for="deposit_h">Deposit your Amount :</label>
+                <input id="deposit-h" type="number"/><br>
+                <button class="button-group deposit-btn">Deposit</button><br>
+
+            </div>
+            <div class=" input-group w-input">
+                <label for="  withdraw_h">withdraw your Amount :<br></label>
+                <input id="withdraw_h" type="number"/><br>
+                <button class="button-group withdraw-btn">Withdraw</button><br>
+
+            </div>
+
+            <div class=" input-group cb-input">
+                <label for="  checkb_h">Check your balance :<br></label><br>
+                <button class=" button-group checkb-btn ">Check</button>
+
+            </div>
+
+
+        </form>
+    </div>
+
+</div>
+
+<div class="screen-meta deposit-screen-meta">
+    <div class="deposit-screen">
+        <h2 class="title">Deposit Area</h2>
+       <form class="deposit-form">
+           <div class="d-input">
+               <label for="deposit_pannel">Deposit your Amount :</label>
+               <input id="deposit-pannel" type="number"/><br>
+               <button class="deposit-pannel-btn">Deposit</button>
+
+           </div>
+
+       </form>
+    </div>
+</div>
+
+    <div class="screen-meta withdraw-screen-meta">
+        <div class="withdraw-screen">
+            <h2 class="title">Withdraw Area</h2>
+            <form class="withdraw-form">
+                <div class="w-input">
+                    <label for="withdraw_pannel">Withdraw your Amount :</label>
+                    <input id="withdraw-pannel" type="number"/><br>
+                    <button class="withdraw-pannel-btn">Withdraw</button>
+                </div>
+
+            </form>
+        </div>
+    </div>
+
+        <div class="screen-meta checkbalance-screen-meta">
+            <div class="checkbalance-screen">
+                <h2 class="title">CheckBalance Area</h2>
+                <form class="checkbalance-form">
+                    <div class="cb-input">
+                        <label for="checkbalance_pannel">For Checking your Balance click below :</label>
+
+                        <button class="checkbalance-pannel-btn">Check</button>
+
+                    </div>
+                </form>
+            </div>
+        </div>
+
+
+
+
+
+        <script src="screens/login-screen.js"></script>
+        <script src="screens/register-screen.js"></script>
+        <script src="screens/dashboard-screen.js"></script>
+        <script src="screens/deposit-screen.js"></script>
+        <script src="screens/withdraw-screen.js"></script>
+        <script src="screens/checkbalance-screen.js"></script>
+        <script src="atm.js"></script>
 
 </body>
+
 </html>

@@ -1,0 +1,41 @@
+.withdraw-screen {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+
+  h2 {
+    flex: 3;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: blue;
+    font-family: 'Fredoka One', cursive;
+    font-size: 1.8rem;
+
+  }
+  .withdraw-form {
+    width: 100%;
+    flex: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+
+    .w-input {
+      display: flex;
+      flex-direction: column;
+      padding: 0 24px;
+    }
+    .withdraw-pannel-btn{
+      color: white;
+      background-color: blue;
+      width: 100px;
+      height: 30px;
+      font-size: 1rem;
+      border-radius: 50px;
+      margin-left: 87px;
+    }
+  }
+}

@@ -1,12 +1,10 @@
-.login-screen {
+.register-screen{
   height: 100%;
   display: flex;
-  justify-content: space-evenly;
+ justify-content: center;
   align-items: center;
   flex-direction: column;
-
-
-  h2 {
+  h2{
     flex: 3;
     display: flex;
     justify-content: center;
@@ -16,15 +14,13 @@
     font-size: 1.8rem;
 
   }
-
-  .login-form {
+  .register-form {
     width: 100%;
     flex: 7;
     display: flex;
     justify-content: center;
     align-items: center;
     flex-direction: column;
-
     .input-group {
       display: flex;
       flex-direction: column;
@@ -39,7 +35,6 @@
       padding-top: 8px;
     }
   }
-
   hr {
     width: 100%;
   }
@@ -65,8 +60,9 @@
 
     }
 
-    .login-up-btn, div {
+    .login-btn, div {
       margin: 0 24px;
     }
   }
 }
+

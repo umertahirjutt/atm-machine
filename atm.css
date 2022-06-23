@@ -5,9 +5,32 @@ body {
   height: 100vh;
   width: 100vw;
   display: flex;
-  justify-content: center;
+  justify-content: space-around;
   align-items: center;
   font-family: sans-serif;
+}
+
+.stack-container {
+  border-left: 5px solid black;
+  border-right: 5px solid black;
+  border-bottom: 5px solid black;
+  border-bottom-left-radius: 10px;
+  border-bottom-right-radius: 10px;
+  height: 80vh;
+  display: flex;
+  flex-direction: column-reverse;
+  justify-content: flex-start;
+}
+.stack-container h3 {
+  background: #bd1abd;
+  margin: 2px 0 0 0;
+  text-align: center;
+  padding: 0 16px;
+  text-transform: uppercase;
+}
+.stack-container h3:last-child {
+  border-bottom-left-radius: 3px;
+  border-bottom-right-radius: 3px;
 }
 
 .mobile-container {
@@ -62,7 +85,7 @@ body {
   border-radius: 100%;
 }
 .mobile-container .mobile-screen {
-  background: antiquewhite;
+  background-color: #ffffff;
   flex: 10;
 }
 .mobile-container .mobile-screen .login-container {
@@ -129,6 +152,9 @@ body {
   display: flex;
   justify-content: center;
   align-items: center;
+  color: blue;
+  font-family: "Fredoka One", cursive;
+  font-size: 1.8rem;
 }
 .login-screen .login-form {
   width: 100%;
@@ -162,8 +188,231 @@ body {
   flex: 4;
   width: 100%;
 }
-.login-screen .footer-arena .login-btn, .login-screen .footer-arena div {
+.login-screen .footer-arena button {
+  background-color: blue;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 40px;
+}
+.login-screen .footer-arena .login-up-btn, .login-screen .footer-arena div {
   margin: 0 24px;
+}
+
+.register-screen {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.register-screen h2 {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-family: "Fredoka One", cursive;
+  font-size: 1.8rem;
+}
+.register-screen .register-form {
+  width: 100%;
+  flex: 7;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.register-screen .register-form .input-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+}
+.register-screen .register-form .input-group label {
+  padding-bottom: 4px;
+}
+.register-screen .register-form .pin-input-group {
+  padding-top: 8px;
+}
+.register-screen hr {
+  width: 100%;
+}
+.register-screen p {
+  margin: 0;
+}
+.register-screen .footer-arena {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex: 4;
+  width: 100%;
+}
+.register-screen .footer-arena button {
+  background-color: blue;
+  color: white;
+  padding: 7px 10px;
+  border-radius: 40px;
+}
+.register-screen .footer-arena .login-btn, .register-screen .footer-arena div {
+  margin: 0 24px;
+}
+
+.dashboard-screen {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dashboard-screen h2 {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-family: "Fredoka One", cursive;
+  font-size: 1.8rem;
+}
+.dashboard-screen .dashboard-form {
+  width: 100%;
+  flex: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.dashboard-screen .dashboard-form .input-group {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+}
+.dashboard-screen .dashboard-form .input-group .button-group {
+  background-color: blue;
+  width: 100px;
+  height: 30px;
+  font-size: 1rem;
+  border-radius: 50px;
+  color: white;
+  margin-left: 87px;
+}
+.dashboard-screen .dashboard-form .input-group label {
+  padding-bottom: 4px;
+}
+
+.deposit-screen {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.deposit-screen h2 {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-family: "Fredoka One", cursive;
+  font-size: 1.8rem;
+}
+.deposit-screen .deposit-form {
+  width: 100%;
+  flex: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.deposit-screen .deposit-form .d-input {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+}
+.deposit-screen .deposit-form .deposit-pannel-btn {
+  color: white;
+  background-color: blue;
+  width: 100px;
+  height: 30px;
+  font-size: 1rem;
+  border-radius: 50px;
+  margin-left: 87px;
+}
+
+.withdraw-screen {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.withdraw-screen h2 {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-family: "Fredoka One", cursive;
+  font-size: 1.8rem;
+}
+.withdraw-screen .withdraw-form {
+  width: 100%;
+  flex: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.withdraw-screen .withdraw-form .w-input {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+}
+.withdraw-screen .withdraw-form .withdraw-pannel-btn {
+  color: white;
+  background-color: blue;
+  width: 100px;
+  height: 30px;
+  font-size: 1rem;
+  border-radius: 50px;
+  margin-left: 87px;
+}
+
+.checkbalance-screen {
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.checkbalance-screen h2 {
+  flex: 3;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: blue;
+  font-family: "Fredoka One", cursive;
+  font-size: 1.8rem;
+}
+.checkbalance-screen .checkbalance-form {
+  width: 100%;
+  flex: 10;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+.checkbalance-screen .checkbalance-form .cb-input {
+  display: flex;
+  flex-direction: column;
+  padding: 0 24px;
+}
+.checkbalance-screen .checkbalance-form .checkbalance-pannel-btn {
+  color: white;
+  background-color: blue;
+  width: 100px;
+  height: 30px;
+  font-size: 1rem;
+  border-radius: 50px;
+  margin-left: 87px;
 }
 
 /*# sourceMappingURL=atm.css.map */
