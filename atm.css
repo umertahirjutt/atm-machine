@@ -140,6 +140,10 @@ body {
   display: none;
 }
 
+.field-warning {
+  color: red;
+}
+
 .login-screen {
   height: 100%;
   display: flex;

@@ -9,7 +9,6 @@ const loginScreen = (mainScreen, stack) => {
         dashboardScreen(mainScreen,stack);
     });
 
-
     root.querySelector('.sign-up-navigator').addEventListener('click', e => {
         registerScreen(mainScreen,stack);
     });

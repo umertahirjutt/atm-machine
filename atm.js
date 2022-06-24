@@ -2,7 +2,17 @@ const mobileScreen = document.querySelector('.mobile-screen');
 
 let stack = [];
 
+let currentUser = null;
+
 let users = [];
+
+const appendErrorFieldToAGroup = (group, text) => {
+    const pre = document.createElement('pre');
+    pre.innerText = text;
+    pre.classList.add('field-warning');
+    group.appendChild(pre);
+    return false;
+}
 
 loginScreen(mobileScreen, stack);
 //registerScreen(mobileScreen, stack);

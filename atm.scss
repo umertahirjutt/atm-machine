@@ -166,6 +166,9 @@ $mobile-color: gray;
   display: none;
 }
 
+.field-warning {
+  color: red;
+}
 
 @import "login-screen";
 @import "register-screen";
