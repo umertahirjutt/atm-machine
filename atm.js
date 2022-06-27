@@ -4,6 +4,8 @@ let stack = [];
 
 let currentUser = null;
 
+let globalMessage = null;
+
 let users = [];
 
 const appendErrorFieldToAGroup = (group, text) => {

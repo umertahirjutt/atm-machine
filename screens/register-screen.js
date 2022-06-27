@@ -22,15 +22,6 @@ const registerScreen = (mainScreen, stack) => {
 
         const emptyText = 'Please fill this field';
 
-        // [
-        //     [ fullNameField, fullNameInputGroup ],
-        //     [ userNameField, registerUsernameInputGroup],
-        //     [ pinField, pinInputGroup],
-        // ].forEach(item => {
-        //     if (item[0].value === '') {
-        //         isAllInputsValid = appendErrorFieldToAGroup(item[1], emptyText)
-        //     }
-        // });
         if (fullNameField.value === '') {
             isAllInputsValid = appendErrorFieldToAGroup(fullNameInputGroup, emptyText)
         }
@@ -44,10 +35,26 @@ const registerScreen = (mainScreen, stack) => {
             return;
         }
 
+        let alreadyRegisteredUser = null;
+
+        for (let i = 0; i < users.length; i++) {
+            let user = users[i];
+            if (user.username === userNameField.value) {
+                alreadyRegisteredUser = user;
+                break;
+            }
+        }
+
+        if (alreadyRegisteredUser !== null) {
+            appendErrorFieldToAGroup(registerUsernameInputGroup, "Username Already Exist!!!");
+            return;
+        }
+
         users.push({
             full_name: fullNameField.value,
             username: userNameField.value,
-            pin: pinField.value
+            pin: pinField.value,
+            wallet: 0
         });
 
         stack.pop();
